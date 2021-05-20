@@ -13,6 +13,8 @@
 		EFCC66992656B00F0090CD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCC66972656B00F0090CD73 /* Main.storyboard */; };
 		EFCC669B2656B00F0090CD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCC669A2656B00F0090CD73 /* Assets.xcassets */; };
 		EFCC669E2656B00F0090CD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCC669C2656B00F0090CD73 /* LaunchScreen.storyboard */; };
+		EFCC66A62656B3D30090CD73 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66A52656B3D30090CD73 /* FeedViewController.swift */; };
+		EFCC66A82656B4010090CD73 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66A72656B4010090CD73 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EFCC669A2656B00F0090CD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCC669D2656B00F0090CD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFCC669F2656B00F0090CD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCC66A52656B3D30090CD73 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EFCC66A72656B4010090CD73 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				EFCC66932656B00F0090CD73 /* SceneDelegate.swift */,
 				EFCC66952656B00F0090CD73 /* ViewController.swift */,
 				EFCC66972656B00F0090CD73 /* Main.storyboard */,
+				EFCC66A52656B3D30090CD73 /* FeedViewController.swift */,
+				EFCC66A72656B4010090CD73 /* ProfileViewController.swift */,
 				EFCC669A2656B00F0090CD73 /* Assets.xcassets */,
 				EFCC669C2656B00F0090CD73 /* LaunchScreen.storyboard */,
 				EFCC669F2656B00F0090CD73 /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				EFCC66962656B00F0090CD73 /* ViewController.swift in Sources */,
 				EFCC66922656B00F0090CD73 /* AppDelegate.swift in Sources */,
+				EFCC66A82656B4010090CD73 /* ProfileViewController.swift in Sources */,
+				EFCC66A62656B3D30090CD73 /* FeedViewController.swift in Sources */,
 				EFCC66942656B00F0090CD73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
