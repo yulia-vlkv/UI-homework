@@ -16,6 +16,8 @@
 		EFCC66A62656B3D30090CD73 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66A52656B3D30090CD73 /* FeedViewController.swift */; };
 		EFCC66A82656B4010090CD73 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66A72656B4010090CD73 /* ProfileViewController.swift */; };
 		EFCC66AA2656B76D0090CD73 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66A92656B76D0090CD73 /* PostViewController.swift */; };
+		EFCC66AC2657F2C40090CD73 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66AB2657F2C40090CD73 /* InfoViewController.swift */; };
+		EFCC66AE2657F7C30090CD73 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC66AD2657F7C30090CD73 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EFCC66A52656B3D30090CD73 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EFCC66A72656B4010090CD73 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFCC66A92656B76D0090CD73 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		EFCC66AB2657F2C40090CD73 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		EFCC66AD2657F7C30090CD73 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				EFCC66932656B00F0090CD73 /* SceneDelegate.swift */,
 				EFCC66952656B00F0090CD73 /* ViewController.swift */,
 				EFCC66972656B00F0090CD73 /* Main.storyboard */,
+				EFCC66AB2657F2C40090CD73 /* InfoViewController.swift */,
+				EFCC66AD2657F7C30090CD73 /* Post.swift */,
 				EFCC66A92656B76D0090CD73 /* PostViewController.swift */,
 				EFCC66A52656B3D30090CD73 /* FeedViewController.swift */,
 				EFCC66A72656B4010090CD73 /* ProfileViewController.swift */,
@@ -149,6 +155,8 @@
 				EFCC66AA2656B76D0090CD73 /* PostViewController.swift in Sources */,
 				EFCC66962656B00F0090CD73 /* ViewController.swift in Sources */,
 				EFCC66922656B00F0090CD73 /* AppDelegate.swift in Sources */,
+				EFCC66AE2657F7C30090CD73 /* Post.swift in Sources */,
+				EFCC66AC2657F2C40090CD73 /* InfoViewController.swift in Sources */,
 				EFCC66A82656B4010090CD73 /* ProfileViewController.swift in Sources */,
 				EFCC66A62656B3D30090CD73 /* FeedViewController.swift in Sources */,
 				EFCC66942656B00F0090CD73 /* SceneDelegate.swift in Sources */,
