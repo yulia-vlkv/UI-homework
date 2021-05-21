@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +14,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QR9-M7-O9d" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nAF-8n-J82">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -42,33 +44,73 @@
             </objects>
             <point key="canvasLocation" x="468" y="-238"/>
         </scene>
-        <!--View Controller-->
+        <!--News feed-->
         <scene sceneID="tpi-5l-sVj">
             <objects>
-                <viewController id="nPM-0j-Myb" sceneMemberID="viewController">
+                <viewController id="nPM-0j-Myb" customClass="FeedViewController" customModule="iOS_UI_homeworks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wIb-Yr-tQL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY8-mj-opV">
+                                <rect key="frame" x="40" y="427" width="334" height="42"/>
+                                <color key="backgroundColor" red="0.51219988596788857" green="0.64058472941134015" blue="0.62864899153638987" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <state key="normal" title="View post">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="323-tz-vbx" kind="show" id="n66-hi-Rp4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i4K-xg-YbL"/>
-                        <color key="backgroundColor" red="0.47816327730000002" green="0.69307748069999997" blue="0.6675563605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.69343563488570537" green="0.86724790595773193" blue="0.85108885126464984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IY8-mj-opV" firstAttribute="leading" secondItem="i4K-xg-YbL" secondAttribute="leading" constant="40" id="3ZT-th-RcZ"/>
+                            <constraint firstItem="IY8-mj-opV" firstAttribute="centerX" secondItem="wIb-Yr-tQL" secondAttribute="centerX" id="DJd-Nf-4fQ"/>
+                            <constraint firstItem="IY8-mj-opV" firstAttribute="centerY" secondItem="wIb-Yr-tQL" secondAttribute="centerY" id="VHt-gT-hHT"/>
+                            <constraint firstItem="i4K-xg-YbL" firstAttribute="trailing" secondItem="IY8-mj-opV" secondAttribute="trailing" constant="40" id="tdE-fH-05a"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mgi-nE-MvU"/>
+                    <navigationItem key="navigationItem" title="News feed" id="mgi-nE-MvU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81N-Vd-Vyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="-238"/>
         </scene>
-        <!--View Controller-->
+        <!--New post-->
+        <scene sceneID="roi-kN-foi">
+            <objects>
+                <viewController id="323-tz-vbx" customClass="PostViewController" customModule="iOS_UI_homeworks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogc-BH-d9A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RWE-F5-F2z"/>
+                        <color key="backgroundColor" red="0.59706207238929854" green="0.74671794461752572" blue="0.73280467250180326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New post" id="X6R-uX-cYi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlP-gT-GEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="-238"/>
+        </scene>
+        <!--Profile-->
         <scene sceneID="prc-7w-xOi">
             <objects>
-                <viewController id="aaj-nc-CK0" sceneMemberID="viewController">
+                <viewController id="aaj-nc-CK0" customClass="ProfileViewController" customModule="iOS_UI_homeworks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kAd-er-aV0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3Fb-k4-Sp0"/>
-                        <color key="backgroundColor" red="0.71703747470000001" green="0.91863321519999996" blue="0.89608863989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="caD-5C-Iz5"/>
+                    <navigationItem key="navigationItem" title="Profile" id="caD-5C-Iz5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOu-ML-7N1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,5 +137,8 @@
     <resources>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
