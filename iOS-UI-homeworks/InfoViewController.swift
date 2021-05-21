@@ -16,7 +16,7 @@ class InfoViewController: UIViewController {
     @IBAction func bigTealButton(_ sender: Any) {
         
         let errorHappens = UIAlertController(title: "Woops!",
-                                             message: "Something went wrong.",
+                                             message: "Something went wrong",
                                              preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel",
