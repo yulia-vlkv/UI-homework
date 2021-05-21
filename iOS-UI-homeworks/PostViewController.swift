@@ -9,4 +9,14 @@ import UIKit
 
 class PostViewController: UIViewController {
     
+    var newPostTeal: Post?
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        title = newPostTeal?.title
+        
+    }
+    
 }
