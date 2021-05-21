@@ -20,5 +20,7 @@ class FeedViewController: UIViewController {
         guard segue.identifier == "show post", let destination = segue.destination as? PostViewController else {
             return
         }
+        
+        destination.newPostTeal = newPost
     }
 }

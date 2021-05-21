@@ -97,7 +97,7 @@
                     <navigationItem key="navigationItem" title="New post" id="X6R-uX-cYi">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="eyes" catalog="system" id="pER-Zq-Nx4">
                             <connections>
-                                <segue destination="HQM-Ww-lna" kind="modal" id="KiK-2u-p26"/>
+                                <segue destination="HQM-Ww-lna" kind="modal" identifier="show post" id="KiK-2u-p26"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,13 +146,32 @@
                     <view key="view" contentMode="scaleToFill" id="72E-5b-oER">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVg-ZC-KZO">
+                                <rect key="frame" x="40" y="400" width="334" height="42"/>
+                                <color key="backgroundColor" red="0.23465139331771045" green="0.44773594746494838" blue="0.4312735198384921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Press me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bigTealButton:" destination="HQM-Ww-lna" eventType="touchUpInside" id="YYd-MJ-vrG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="47K-K8-6M9"/>
                         <color key="backgroundColor" red="0.37764440896189089" green="0.57841275836082473" blue="0.56423719184067012" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iVg-ZC-KZO" firstAttribute="centerX" secondItem="72E-5b-oER" secondAttribute="centerX" id="6RG-mq-b9m"/>
+                            <constraint firstItem="iVg-ZC-KZO" firstAttribute="leading" secondItem="47K-K8-6M9" secondAttribute="leading" constant="40" id="KhC-mv-4W8"/>
+                            <constraint firstItem="iVg-ZC-KZO" firstAttribute="centerY" secondItem="72E-5b-oER" secondAttribute="centerY" id="Rml-aw-c5k"/>
+                            <constraint firstItem="47K-K8-6M9" firstAttribute="trailing" secondItem="iVg-ZC-KZO" secondAttribute="trailing" constant="40" id="b8u-mh-ckW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ml-uT-Dra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2935" y="-238"/>
+            <point key="canvasLocation" x="2891" y="-238"/>
         </scene>
     </scenes>
     <resources>
