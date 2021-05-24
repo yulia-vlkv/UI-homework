@@ -17,7 +17,7 @@ class FeedViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard segue.identifier == "show post", let destination = segue.destination as? PostViewController else {
+        guard segue.identifier == "showPVC", let destination = segue.destination as? PostViewController else {
             return
         }
         

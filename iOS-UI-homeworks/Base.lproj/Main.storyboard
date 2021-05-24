@@ -64,7 +64,7 @@
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="323-tz-vbx" kind="show" id="n66-hi-Rp4"/>
+                                    <segue destination="323-tz-vbx" kind="show" identifier="showPVC" id="n66-hi-Rp4"/>
                                 </connections>
                             </button>
                         </subviews>
